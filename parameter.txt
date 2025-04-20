@@ -1,0 +1,31 @@
+# parameter file for renumf90
+# BW = (SEX + AGE + ANIMAL + RESIDUAL)
+DATAFILE
+ dataset.txt
+SKIP_HEADER
+ 1
+TRAITS
+ 4
+FIELDS_PASSED TO OUTPUT
+ 
+WEIGHT(S)
+ 
+RESIDUAL_VARIANCE
+ 726
+EFFECT
+ 2 cross alpha			#fixed effect(SEX)
+EFFECT
+ 3 cov				#covariable (AGE)
+EFFECT
+ 1 cross alpha			#animal
+RANDOM
+animal
+FILE
+pedigree.txt
+PED_DEPTH
+0 
+INBREEDING
+pedigree 
+(CO)VARIANCES
+110
+OPTION method BLUP
